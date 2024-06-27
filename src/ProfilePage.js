@@ -148,28 +148,7 @@ const ProfilePage = () => {
         <OttomanMotif className="absolute bottom-10 right-20 w-20 h-20 text-[#bd8a3d] opacity-20 rotate-180 animate-pulse" />
         
         <div className="w-full max-w-md z-10">
-          {/* Hafız Mustafa Logo */}
-          <div className="relative w-full flex justify-center items-center mb-4">
-            <motion.div
-              initial={{ scale: 0, rotate: -180 }}
-              animate={{ scale: 1, rotate: 0 }}
-              transition={{
-                type: "spring",
-                stiffness: 260,
-                damping: 20,
-                duration: 0.8
-              }}
-              className="w-24 h-24 sm:w-32 sm:h-32 relative z-10"
-            >
-              <img 
-                src={process.env.PUBLIC_URL + '/hafiz-mustafa-logo.webp'} 
-                alt="Hafız Mustafa Logo" 
-                className="w-full h-full object-contain"
-              />
-            </motion.div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-28 h-28 sm:w-36 sm:h-36 bg-[#fefefd] dark:bg-[#0a0807] rounded-full shadow-lg -z-10"></div>
-          </div>
-  
+          {/* Top controls */}
           <div className="flex justify-between items-center mb-6">
             <motion.button 
               className="text-[#603f2a] dark:text-[#ccb8a9] text-xl sm:text-2xl bg-opacity-50 bg-[#ccb8a9] dark:bg-opacity-50 dark:bg-[#603f2a] rounded-full p-2"
@@ -203,6 +182,28 @@ const ProfilePage = () => {
                 {darkMode ? <MdLightMode /> : <MdDarkMode />}
               </motion.button>
             </div>
+          </div>
+  
+          {/* Hafız Mustafa Logo */}
+          <div className="relative w-full flex justify-center items-center mb-4">
+            <motion.div
+              initial={{ scale: 0, rotate: -180 }}
+              animate={{ scale: 1, rotate: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+                duration: 0.8
+              }}
+              className="w-24 h-24 sm:w-32 sm:h-32 relative z-10"
+            >
+              <img 
+                src={process.env.PUBLIC_URL + '/hafiz-mustafa-logo.webp'} 
+                alt="Hafız Mustafa Logo" 
+                className="w-full h-full object-contain"
+              />
+            </motion.div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-28 h-28 sm:w-36 sm:h-36 bg-[#fefefd] dark:bg-[#0a0807] rounded-full shadow-lg -z-10"></div>
           </div>
           
           <motion.div 
